@@ -1,3 +1,56 @@
+//generate random number 
+// input from user 
+// check user enter the correct
+// alert correct answer
+let genNumber = Math.ceil(Math.random()*10);
+console.log(genNumber);
+let guessNumber = prompt('Guess the number between 1 & 10 ');
+console.log(guessNumber);
+
+if(genNumber==guessNumber){
+    console.log("true");
+    alert("Correct you won");
+}else{
+    console.log("false");
+    alert("You loose, try again");
+}
+
+
+
+
+//switch case ::  group together 5 & 6
+
+let x =5;
+switch(x){
+    case 5 : 
+    case 6 :
+        console.log("X : 5 or 6");
+        break;
+    case 7 : 
+        console.log(" is "+x);
+        break;
+     default :
+        console.log("! 5 or 6");      
+}
+//falsy values : boolean , null, undefined, "", 1, 0
+if (""){
+    console.log("true");
+}else {
+    console.log("false");
+}
+
+// operator 
+// === used to checks value and type 
+let y =7; 
+a = y==="7"; 
+if (a){
+    console.log("returns : "+a);
+}
+else{
+    console.log("returns : "+ a);
+}
+
+
 //alert("external JS");
 //dataTypes -- primitive or object
 // 7 primitive data types: string, number, bigint, boolean, undefined, symbol, and null
