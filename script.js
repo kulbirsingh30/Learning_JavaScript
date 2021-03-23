@@ -1,3 +1,49 @@
+
+//get the date
+//get the day from date 
+//ask the user to enter the day
+//match 
+
+let today = new Date();
+console.log("today date : "+today);
+const day = today.getDay();
+console.log("day :"+day);
+let guessDay = prompt("Guess the day");
+console.log(guessDay);
+let result;
+switch(day){
+    case 0 : 
+        result="Sunday";
+        break;
+    case 1 : 
+        result="Monday";
+        break;
+    case 2 : 
+        result="Tuesday";
+        break;
+    case 3 : 
+        result="Wednesday";
+        break;  
+    case 4 : 
+        result="Thrusday";
+        break;
+    case 5 : 
+        result="Friday";
+        break;
+    case 6 : 
+        result="Saturday";
+        break;
+    
+}
+if(guessDay.toLocaleLowerCase==result.toLocaleLowerCase){ 
+    console.log("true");
+    alert(guessDay+" is "+result+" you are right");
+
+}
+else{
+    alert("Bad luck !!! Please try again");
+}
+ 
 //generate random number 
 // input from user 
 // check user enter the correct
