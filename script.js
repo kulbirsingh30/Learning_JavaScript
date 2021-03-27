@@ -1,3 +1,27 @@
+for(let a=0;a<10;a++){
+    console.log("table for " +a);
+    for(let b =0; b<=10;b++){
+        console.log( a+" * "+b+" :"+a*b);
+
+    }
+}
+
+
+let q=0;
+do{
+    console.log(q);
+    q++;
+}while(q<3);
+
+let i=0;
+while(i<=3){
+    console.log(i);
+    i++;
+}
+
+for(let i=0;i<5;i++){
+    console.log("test");
+}
 
 //get the date
 //get the day from date 
