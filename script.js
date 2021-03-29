@@ -1,3 +1,5 @@
+
+
 for(let a=0;a<10;a++){
     console.log("table for " +a);
     for(let b =0; b<=10;b++){
