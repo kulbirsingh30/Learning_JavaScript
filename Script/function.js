@@ -1,3 +1,42 @@
+function callif(arr,value,callback){
+    arr.forEach(function(e){
+
+        if(e> value){
+
+            callback(e);
+        }
+    })
+}
+
+callMe(function(sum){
+    console.log("sum");
+})
+
+
+//IIFE
+
+(function greet(){
+    console.log("hello IIFE - function calls itself immediately after it is defined");
+})();
+
+
+
+//4. accepts an array and value, returns a new array with values > then value provided
+ 
+function greaterThan(arr, value){
+    if(value){
+    let res = arr.filter(function(e){
+        return e>value;
+    })
+    return res;
+    }else{
+    return arr;
+}
+}
+
+console.log(greaterThan([4,15,3,2,4]))
+
+//3. returns the small element 
 function smallestNubArray(){
     let restSmal=Infinity;
     for (let i=0; i< arguments.length;i++){
